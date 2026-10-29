@@ -7,12 +7,12 @@ import {
 import { and, arrayContains, eq, ilike, or } from 'drizzle-orm';
 import { DRIZZLE, type Db } from '../../db/db.module.js';
 import { ticketsTable, type TicketRow } from '../../db/schema.js';
-import type { Ticktes } from './ticket/ticket.interface.js';
 import type {
   CreateTicketDto,
   FindTicketsQuery,
   UpdateTicketDto,
 } from './dto/ticket.dto.js';
+import type { Ticktes } from './ticket/ticket.interface.js';
 
 // DB row (Date object) -> API shape (ISO string) convert.
 // Karon Ticktes interface e createdAt: string, kintu Postgres theke Date ase.

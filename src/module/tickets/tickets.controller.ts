@@ -14,6 +14,7 @@ import {
   Query,
 } from '@nestjs/common';
 import { TicketsService } from './tickets.service.js';
+import { ApiQuery } from '@nestjs/swagger';
 import type {
   CreateTicketDto,
   FindTicketsQuery,
@@ -25,7 +26,17 @@ export class TicketsController {
   constructor(private readonly ticketsService: TicketsService) {}
 
   // GET /api/tickets?completed=true&priority=high&search=nest&tag=api
+  // @ApiQuery required:false dile Swagger UI te optional dekhay,
+  // nahole Swagger sob query ke required vabe block kore.
   @Get()
+  @ApiQuery({ name: 'completed', required: false, type: Boolean })
+  @ApiQuery({
+    name: 'priority',
+    required: false,
+    enum: ['low', 'medium', 'high'],
+  })
+  @ApiQuery({ name: 'search', required: false, type: String })
+  @ApiQuery({ name: 'tag', required: false, type: String })
   findAll(
     @Query('completed', new ParseBoolPipe({ optional: true }))
     completed?: boolean,
