@@ -133,8 +133,9 @@ export class TicketsService {
 
   // PATCH /tickets/:id — partial update. Ja pathabe sudhu setai change hobe.
   async update(id: number, dto: UpdateTicketDto): Promise<Ticktes> {
-    // Khali {} asle DB hit na kore ager data ferot.
-    if (Object.keys(dto).length === 0) {
+    // Khali {} ba body na asle DB hit na kore ager data ferot.
+    // Age ekhane Object.keys(dto) direct chilo, dto undefined asle crash korto.
+    if (!dto || Object.keys(dto).length === 0) {
       return this.findOne(id);
     }
     const rows = await this.db
