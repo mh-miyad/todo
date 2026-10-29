@@ -7,11 +7,11 @@
       "dependencies": {
         "@nestjs/common": "^12.0.1",
         "@nestjs/core": "^12.0.1",
-        "@nestjs/observe": "^0.3.0",
         "@nestjs/platform-express": "^12.0.1",
         "@nestjs/swagger": "^12.0.5",
         "reflect-metadata": "^0.2.2",
         "rxjs": "^7.8.1",
+        "zod": "^4.6.7",
       },
       "devDependencies": {
         "@nestjs/cli": "^12.0.0",
@@ -105,8 +105,6 @@
     "@nestjs/mapped-types": ["@nestjs/mapped-types@12.0.0", "", { "peerDependencies": { "@nestjs/common": "^10.0.0 || ^11.0.0 || ^12.0.0", "class-transformer": "^0.4.0 || ^0.5.0", "class-validator": "^0.13.0 || ^0.14.0 || ^0.15.0", "reflect-metadata": "^0.1.12 || ^0.2.0" }, "optionalPeers": ["class-transformer", "class-validator"] }, "sha512-aX7lxZcqXldtnSr0bgT2ZPQvpTpIwBMW1GMX29o4s3q02vmq6JoTYuPW0GwYXa8BiFMRX7WbGZVDA703pNqOMQ=="],
 
     "@nestjs/mau": ["@nestjs/mau@0.2.9", "", { "dependencies": { "chalk": "4.1.2", "cli-progress": "3.12.0", "commander": "4.1.1", "inquirer": "8.2.6", "node-emoji": "2.1.3", "ora": "5.4.1", "undici": "6.20.1" }, "bin": { "mau": "bin/mau.js" } }, "sha512-VDrolWI8sAt1Z2HzQ+6uNtedK6+ZWmtp5bahuiu9HnJz9CgLUu5cN5WfR3kleMFPZWinSaExSFyUWtK8PBJp6Q=="],
-
-    "@nestjs/observe": ["@nestjs/observe@0.3.20", "", { "dependencies": { "@jridgewell/trace-mapping": "0.3.31" }, "peerDependencies": { "@nestjs/bull": "^11.0.0 || ^12.0.0", "@nestjs/bullmq": "^11.0.0 || ^12.0.0", "@nestjs/common": "^11.0.0 || ^12.0.0", "@nestjs/core": "^11.0.0 || ^12.0.0", "@nestjs/graphql": "^13.0.0 || ^14.0.0", "@nestjs/microservices": "^11.0.0 || ^12.0.0", "@nestjs/schedule": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^12.0.0", "@nestjs/websockets": "^11.0.0 || ^12.0.0", "@taskforcesh/bullmq-pro": "^7.0.0", "bull": "^3.3.0 || ^4.0.0", "bullmq": "^5.0.0 || ^6.0.0", "reflect-metadata": "^0.1.12 || ^0.2.0", "rxjs": "^7.0.0" }, "optionalPeers": ["@nestjs/bull", "@nestjs/bullmq", "@nestjs/graphql", "@nestjs/microservices", "@nestjs/schedule", "@nestjs/websockets", "@taskforcesh/bullmq-pro", "bull", "bullmq"], "bin": { "observe": "dist/cli/observe-cli.js" } }, "sha512-0uR4UZKHSzl4SUk0Jm5JODvkiuoxZR2QJD2NUEaTh/XFu+YET01eilXrhuh39IIJ3M8wsSfvn7mEB8Laf/JifQ=="],
 
     "@nestjs/platform-express": ["@nestjs/platform-express@12.3.2", "", { "dependencies": { "cors": "2.8.6", "express": "5.3.0", "multer": "2.5.0", "path-to-regexp": "8.4.2", "tslib": "2.8.1" }, "peerDependencies": { "@nestjs/common": "^12.0.0", "@nestjs/core": "^12.0.0" } }, "sha512-wbe1zd6xWLW8qI6t3RP3SqqQnp32pVAfXKqttcp/geL5ys6xw6c/HkASXLNvwlf7IzMLxnpqANtHHwcF4waqRA=="],
 
@@ -747,6 +745,8 @@
     "wrappy": ["wrappy@1.0.2", "", {}, "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="],
 
     "yoctocolors": ["yoctocolors@2.2.0", "", {}, "sha512-xYqdZFUK/VYazNl/oCDYN+3WloWQwMfZxBoiNt6qNyk+xfOdi598muWE42rNZFp1kNOiqW936q5RhUdnpqElSg=="],
+
+    "zod": ["zod@4.6.7", "", {}, "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg=="],
 
     "@angular-devkit/core/source-map": ["source-map@0.8.0", "", {}, "sha512-d8EqvL+k/SOXCreS/SUzg2ciyHqBBLcN/yuRjFsbvVhHTE2pgei7oAhmPM7kWFbkX6OSMQfUq4KbkF3au9lhYQ=="],
 
